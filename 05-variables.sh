@@ -4,5 +4,8 @@ echo "please enter your username"
 
 read -s USERNAME 
 
-echo "Username is $USERNAME"  # just printing the value for validation
+echo "please enter your password"
 
+read -s PASSWORD 
+
+echo "Username is $USERNAME, Password is $PASSWORD"

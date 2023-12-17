@@ -2,7 +2,7 @@
 
 echo "please enter your username"
 
-read USERNAME 
+read -s USERNAME 
 
-echo "Username is $USERNAME"
+echo "Username is $USERNAME"  # just printing the value for validation
 

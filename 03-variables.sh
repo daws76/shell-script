@@ -2,5 +2,5 @@
 
 DATE=$(date)
 
-echo "data and time is ${DATE}"
+echo "Script started executing is:: ${DATE}"
 

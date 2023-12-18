@@ -11,8 +11,7 @@ LOGFILE="/tmp/$0-$TIMESTAMP.log"
 
 echo "Script started executing at $TIMESTAMP" &>> $LOGFILE 
 
-VALIDATE()
-{
+VALIDATE(){
   if [ $1 -ne 0 ]
   then 
     echo -e "$2 .. $R Failed $N"
@@ -37,7 +36,7 @@ do
   yum list installed $package &>> $LOGFILE #pre checking 
   if [ $? -ne 0 ]
   then 
-    yum installed $package -y &>> $LOGFILE
+    yum install $package -y &>> $LOGFILE
     VALIDATE $? "Installation of $package" # validate 
   else 
     echo -e "$package is already installed ... $Y SKIPPING $N"  &>> $LOGFILE  

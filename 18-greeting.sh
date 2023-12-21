@@ -1,7 +1,7 @@
 #!/bin/bash
 
 NAME=""
-WISHES=""
+WISHES="Good Morning"
 
 USAGE(){
     echo "USAGE:: $(basename $0) -n <name> -w <wishes>"
@@ -28,6 +28,5 @@ then
      exit 1
  fi  
 
- echo "Hello $NAME, $WISHES, I have been learning shell script"
- 
-  
+ echo "Hello $NAME. $WISHES. I have been learning shell script."
+
